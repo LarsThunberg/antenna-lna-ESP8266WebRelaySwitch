@@ -9,6 +9,12 @@ Relay boards used is the following, but similar boards with the same type of ser
 * https://www.icstation.com/mobile/esp8266-wifi-channel-relay-module-remote-control-switch-wireless-transmitter-smart-home-p-13421.html
 
 # Setup
+Enter the name and password of your Wifi network:
+```
+const char* ssid = "name"; //Enter Wi-Fi SSID
+const char* password =  "password"; //Enter Wi-Fi Password
+```
+
 Change the following to your choice of fixed IP address, or just remove/comment all the IPAddress rows if you would like to use dynamic address. See comment in the code.
 ```
   IPAddress ip(192, 168, 1, 20);
